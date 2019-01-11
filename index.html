@@ -2,7 +2,8 @@
 <html lang="en" dir="ltr">
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta charset="utf-8">
     <title>SkeeballVK</title>
     <link rel="stylesheet" href="css/style.css">
@@ -10,14 +11,17 @@
 
 <body>
 
-<!-- navbar -->
-<ul>
-    <li class="logo menu">SkeeBallVK</li>
-    <li class="menu" style="float:right"><a href="#contact">Contact</a></li>
-    <li class="menu" style="float:right"><a href="#over-ons">Over ons</a></li>
-    <li class="menu" style="float:right; "><a href="#product" style="color:red !important;">SkeeBallVK</a></li>
-    <li class="menu" style="float:right"><a href="#home">Home</a></li>
-</ul>
+<div class="topnav" id="myTopnav">
+    <a href="#home">Home</a>
+    <a href="#product-section" style="color: red;">SkeeballVK</a>
+    <a href="#calculator">Calculator</a>
+    <a href="#over-ons">Over Ons</a>
+    <a href="#contact">Contact</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+    </a>
+</div>
+
 <!-- sectie voor carousel -->
 <div class="slideshow-container">
 
@@ -47,7 +51,7 @@
 </div>
 
 
-<!-- product section -->
+<!-- sectie voor promotievideo -->
 <div class="product-section" id="product-section">
     <hr>
     <h1 style="text-align: center;">SkeeBallVK</h1>
@@ -75,44 +79,24 @@
     </div>
 </div>
 
+<!--prijscalculator-->
 <div class="calculator">
     <hr>
     <h2>Bereken de prijs als u meerdere SkeeballVK's koopt</h2>
-    <!--<select>-->
-
-    <!--</select>-->
-
-    <select id="id_of_select">
-        <option></option>
-        <option id="1">1 SkeeballVK</option>
-        <option id="2">2 SkeeballVK's</option>
-        <option id="3">3 SkeeballVK's</option>
-        <option id="4">4 SkeeballVK's</option>
-        <option id="5">5 (max) SkeeballVK's</option>
+    <select id="ddlViewBy">
+        <option value="1">1 SkeeballVK</option>
+        <option value="2">2 SkeeballVK's</option>
+        <option value="3">3 SkeeballVK's</option>
+        <option value="4">4 (max) SkeeballVK's</option>
     </select>
 
     <button id="calculator" onclick="bereken()">Bereken</button>
+    <div id="answer"></div>
 
 
-    <div id="display"></div>
-<div id="answer"></div>
-
-    <script>
-        "use strict";
-
-        function show_selected() {
-            let selector = document.getElementById('id_of_select');
-            var value = 19.99;
-
-
-            document.getElementById('display').innerHTML = "€" + value *2;
-        }
-
-        document.getElementById('calculator').addEventListener('click', show_selected);;
-
-    </script>
 </div>
 
+<!--over ons sectie-->
 <div class="over-ons-section">
     <hr>
     <h1 style="text-align: center;"> Over ons</h1>
