@@ -138,8 +138,13 @@ img {
 
 .flex-item {
   padding: 5px;
-  width: 1000px;
+  /*width: 1000px;*/
   margin-top: 10px;
+}
+@media screen and (width:600px) {
+  .flex-item {
+    max-width: 100%;
+  }
 }
 
 .contact-section {
@@ -180,14 +185,12 @@ html {
 @media screen and (width:600px) {
   .menu {
     width: 100%;
-    /* The width is 100%, when the viewport is 800px or smaller */
   }
 }
 
 @media screen and (max-width:510px) {
   .text {
     font-size: 10px;
-    /* The width is 100%, when the viewport is 800px or smaller */
   }
 }
 

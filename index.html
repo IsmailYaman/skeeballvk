@@ -12,44 +12,46 @@
 <body>
 
 <div class="topnav" id="myTopnav">
-    <a href="#home">Home</a>
     <a href="#product-section" style="color: red;">SkeeballVK</a>
     <a href="#calculator">Calculator</a>
     <a href="#over-ons">Over Ons</a>
     <a href="#contact">Contact</a>
-    <a href="javascript:void(0);" class="icon" onclick="collapse()">
+    <a href="#" class="icon" onclick="collapse()">
         <i class="fa fa-bars"></i>
     </a>
 </div>
 
-<!-- sectie voor carousel -->
 <div class="slideshow-container">
 
-    <div class="slide fade">
+    <div class="mySlides fade">
+        <img src="img/img1.jpg" style="width:100%">
         <div class="text">Wow. De SkeeballVK is geweldig. Het houdt mijn kinderen bezig en heb ik nu ook tijd voor
             mezelf. Ook leren ze tellen en rekenen met de SkeeballVK. Ik raad dit product iedereen aan. <br> <br>5/5
             ⭐⭐⭐⭐⭐<br>-Bertha Martha Martine
         </div>
-        <img src="img/img1.jpg" style="width:100%">
     </div>
 
-    <div class="slide fade">
+    <div class="mySlides fade">
+        <img src="img/img2.jpg" style="width:100%">
         <div class="text">SkeeBallVK is een erg leerzaam spel die kleuters leert hoe je moet tellen. <br> <br>5/5
             ⭐⭐⭐⭐⭐<br>-Rosa Lin
         </div>
-        <img src="img/img2.jpg" style="width:100%">
     </div>
 
-    <div class="slide fade">
+    <div class="mySlides fade">
+        <img src="img/img3.jpg" style="width:100%">
         <div class="text">Dankzij SkeeBallVK breng ik meer tijd met mijn kinderen en ze leren ook tellen! <br> <br>5/5
             ⭐⭐⭐⭐⭐<br>-Annette van Dijk
         </div>
-        <img src="img/img3.jpg" style="width:100%">
     </div>
+
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
     <a class="next" onclick="plusSlides(1)">&#10095;</a>
-</div>
 
+</div>
+<script>
+
+</script>
 
 <!-- sectie voor promotievideo -->
 <div class="product-section" id="product-section">
@@ -64,25 +66,23 @@
 
 <div class="flex-container">
     <div class="flex-item"><strong class="product-info">De SkeeBallVK</strong>
-        <p class="product-info">De SkeeballVK is de nieuwste versie van de skeeball perfect voor uren plezier in je
+        <p class="product-info">De SkeeBallVK is de nieuwste versie van de skeeball perfect voor uren plezier in je
             eigen huis. Het helpt kinderen met tellen en houdt ze ook nog urenlang bezig met speelplezier! SkeeBallVK
-            wordt gespeeld met stuiterballen zodat er een extra kans
-            is dat de bal in het gat terecht komt.</p></div>
-    <div class="flex-item"><strong class="product-info">Voor de veiligeid van uw kind:</strong>
+            wordt gespeeld met stuiterballen zodat er een extra kans is dat de bal in het gat terecht komt..</p></div>
+    <div class="flex-item"><strong class="product-info">Voor de veiligheid van uw kind:</strong>
         <p class="product-info">De SkeeBallVK moet op een plek gezet worden waar er genoeg ruimte is. Minimaal 1,5 meter
-            aan beide kanten moeten vrij van andere objecten zijn. De ballen die geleverd worden met SkeeBallVK is
-            bedekt met een laag substansie die erg bitter smaakt maar
-            niet giftig is. Dit is gedaan om te voorkomen dat kinderen de ballen in hun mond doen. Uit onderzoek is
-            gebleken dat 1 op 120.000 kinderen de bittere smaak lekker vinden en toch de ballen in hun mond doen. Als uw
-            kind de bittere smaak lekker vindt
-            let op dat hij/zij het niet doorslikt.</p>
+            aan beide kanten moeten vrij van andere objecten zijn. De ballen die geleverd worden met SkeeBallVK zijn
+            bedekt met een laag substantie die erg bitter smaakt maar niet giftig is. Dit is gedaan om te voorkomen dat
+            kinderen de ballen in hun mond doen. Uit onderzoek is gebleken dat 1 op 120.000 kinderen de bittere smaak
+            lekker vinden en toch de ballen in hun mond doen. Als uw kind de bittere smaak lekker vindt let op dat
+            hij/zij het niet doorslikt.</p>
     </div>
 </div>
 
 <!--prijscalculator-->
 <div class="calculator">
     <hr>
-    <h2>Bereken de prijs als u meerdere SkeeballVK's koopt</h2>
+    <h2>Bereken de prijs als u meerdere SkeeballVK's wilt kopen.</h2>
     <select id="ddlViewBy">
         <option value="1">1 SkeeballVK</option>
         <option value="2">2 SkeeballVK's</option>
@@ -97,16 +97,16 @@
 </div>
 
 <!--over ons sectie-->
-<div class="over-ons-section">
+<div id="over-ons" class="over-ons-section">
     <hr>
     <h1 style="text-align: center;"> Over ons</h1>
-    <p class="team-info">Superteam 15+17 is het team dat je nodig hebt als u een origineel product wilt hebben dat
+    <p class="team-info">Superteam 15+17 is het team die je nodig hebt als je een origineel product wilt hebben dat
         altijd werkt. </p>
     <img class="team-img" src="img/team.png">
 </div>
 
 
-<div class="contact-section">
+<div id="contact" class="contact-section">
     <p style="text-align: center;">Voor vragen bel alstublieft niet naar 0674794739</p>
 
     <p class="copyright"> Copyright Team 15 & Team 17 &copy;</p>
