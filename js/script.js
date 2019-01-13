@@ -18,11 +18,19 @@ function showSlides(n) {
 
 }
 function collapse() {
-    var x = document.getElementById("myTopnav");
+    let x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
         x.className += " responsive";
     } else {
         x.className = "topnav";
     }
+}
+
+function calculate(){
+    let price = 19.99;
+    let x = document.getElementById("dropdown");
+    let strUser = x.value;
+
+    document.getElementById("answer").innerHTML = "€"+strUser * price+ " inc. BTW";
 }
 

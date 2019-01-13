@@ -33,14 +33,14 @@
 
     <div class="mySlides fade">
         <img src="img/img2.jpg" style="width:100%">
-        <div class="text">SkeeBallVK is een erg leerzaam spel die kleuters leert hoe je moet tellen. <br> <br>5/5
+        <div class="text">SkeeballVK is een erg leerzaam spel die kleuters leert hoe je moet tellen. <br> <br>5/5
             ⭐⭐⭐⭐⭐<br>-Rosa Lin
         </div>
     </div>
 
     <div class="mySlides fade">
         <img src="img/img3.jpg" style="width:100%">
-        <div class="text">Dankzij SkeeBallVK breng ik meer tijd met mijn kinderen en ze leren ook tellen! <br> <br>5/5
+        <div class="text">Dankzij SkeeballVK breng ik meer tijd met mijn kinderen en ze leren ook tellen! <br> <br>5/5
             ⭐⭐⭐⭐⭐<br>-Annette van Dijk
         </div>
     </div>
@@ -55,7 +55,7 @@
 
 <!-- sectie voor promotievideo -->
 <div class="product-section" id="product-section">
-    <hr>
+
     <h1 style="text-align: center;">SkeeBallVK</h1>
     <div class="videoWrapper">
         <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/h-FntnRZo0o" frameborder="0"
@@ -65,13 +65,13 @@
 </div>
 
 <div class="flex-container">
-    <div class="flex-item"><strong class="product-info">De SkeeBallVK</strong>
-        <p class="product-info">De SkeeBallVK is de nieuwste versie van de skeeball perfect voor uren plezier in je
-            eigen huis. Het helpt kinderen met tellen en houdt ze ook nog urenlang bezig met speelplezier! SkeeBallVK
-            wordt gespeeld met stuiterballen zodat er een extra kans is dat de bal in het gat terecht komt..</p></div>
+    <div class="flex-item"><strong class="product-info">De SkeeballVK</strong>
+        <p class="product-info">De SkeeballVK is de nieuwste versie van de skeeball perfect voor uren plezier in je
+            eigen huis. Het helpt kinderen met tellen en houdt ze ook nog urenlang bezig met speelplezier! SkeeballVK
+            wordt gespeeld met stuiterballen zodat er een extra kans is dat de bal in het gat terecht komt.</p></div>
     <div class="flex-item"><strong class="product-info">Voor de veiligheid van uw kind:</strong>
-        <p class="product-info">De SkeeBallVK moet op een plek gezet worden waar er genoeg ruimte is. Minimaal 1,5 meter
-            aan beide kanten moeten vrij van andere objecten zijn. De ballen die geleverd worden met SkeeBallVK zijn
+        <p class="product-info">De SkeeballVK moet op een plek gezet worden waar er genoeg ruimte is. Minimaal 1,5 meter
+            aan beide kanten moeten vrij van andere objecten zijn. De ballen die geleverd worden met SkeeballVK zijn
             bedekt met een laag substantie die erg bitter smaakt maar niet giftig is. Dit is gedaan om te voorkomen dat
             kinderen de ballen in hun mond doen. Uit onderzoek is gebleken dat 1 op 120.000 kinderen de bittere smaak
             lekker vinden en toch de ballen in hun mond doen. Als uw kind de bittere smaak lekker vindt let op dat
@@ -83,15 +83,16 @@
 <div class="calculator">
     <hr>
     <h2>Bereken de prijs als u meerdere SkeeballVK's wilt kopen.</h2>
-    <select id="ddlViewBy">
+    <select class="dropdown" id="dropdown">
+        <option value="0">Geen</option>
         <option value="1">1 SkeeballVK</option>
         <option value="2">2 SkeeballVK's</option>
         <option value="3">3 SkeeballVK's</option>
         <option value="4">4 (max) SkeeballVK's</option>
     </select>
 
-    <button id="calculator" onclick="bereken()">Bereken</button>
-    <div id="answer"></div>
+    <button class="calculate" id="calculator" onclick="calculate()">Bereken</button>
+    <div class="answer" id="answer"></div>
 
 
 </div>
