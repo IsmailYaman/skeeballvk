@@ -260,8 +260,6 @@ html {
   overflow: hidden;
   background-image: linear-gradient(to right, blue, purple, green, yellow, red);
   position: sticky;
-  top: 0;
-  z-index: 1;
 }
 
 .topnav a {
@@ -308,6 +306,5 @@ html {
     float: none;
     display: block;
     text-align: left;
-    position: sticky;
   }
 }
