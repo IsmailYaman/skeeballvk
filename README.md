@@ -1,2 +1,2 @@
 # skeeballvk
-This is a onepager website that I made for a school assignment.
+This is a [onepager website](https://ismailyaman.github.io/skeeballvk/) that I made for a school assignment.
